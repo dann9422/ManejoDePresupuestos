@@ -9,7 +9,7 @@
 <h5>El tipo de cuenta que se refiere a como podemos agrupar cuentas.
     Ejemplos: prestamos,tarjetas de credito etc..</h5>
 
-    <div asp-validation-summary="All" class="text-danger"></div>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
     <form asp-action="Crear">
         <div class="mb-3">
@@ -18,7 +18,7 @@
         <span asp-validation-for="Nombre" class="text-danger" ></span>
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
-
+        <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
 
 
     </form>
